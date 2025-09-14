@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R.B.- Bosh sahifa</title>
+  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+<body>
+  <header>
+    <div class="logo">
+      <img src="icons8-astronomy-64.png" alt="Logo">
+      <h2 style="color:#fff;">R.B.</h2>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#services">Xizmatlar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+
+    <button class="menu-btn">&#9776;</button>
+  </header>
+
+  <!-- Bosh sahifa -->
+  <section id="home" class="hero">
+    <h1>Web Dasturlash O‘rganing 🚀</h1>
+    <p>Siz uchun eng yaxshi va qulay darsliklar shu yerda.</p>
+    <button class="cta-btn">Boshlash</button>
+  </section>
+
+  <!-- Biz haqimizda -->
+  <section id="about" class="about">
+    <h2>Biz haqimizda</h2>
+    <p>MySite — bu dasturlashni o‘rgatuvchi onlayn platforma. 
+       Bizning maqsadimiz — sizga zamonaviy texnologiyalarni tez va samarali o‘rgatish.</p>
+  </section>
+
+  <!-- Xizmatlar -->
+  <section id="services" class="services">
+    <h2>Xizmatlarimiz</h2>
+    <div class="cards">
+      <div class="card">💻 Frontend kursi</div>
+      <div class="card">⚙️ Backend kursi</div>
+      <div class="card">📱 Mobil ilova</div>
+      <div class="card">🎨 Web dizayn</div>
+    </div>
+  </section>
+
+  <!-- Aloqa -->
+  <section id="contact" class="contact">
+    <h2>Aloqa</h2>
+    <p>Savollaringiz bo‘lsa bizga yozing:</p>
+    <form>
+      <input type="text" placeholder="Ismingiz" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Xabaringiz"></textarea>
+      <button type="submit">Yuborish</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025.R.B. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
