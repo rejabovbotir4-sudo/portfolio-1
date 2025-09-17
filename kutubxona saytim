@@ -1,1 +1,2 @@
-
+mv path/to/oldfile1.jpg library/
+mv path/to/oldfile2.jpg library/
