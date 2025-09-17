@@ -3,75 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>R.B.- Bosh sahifa</title>
-  <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+  <link rel="stylesheet" href="css/index.css">
+  <script src=js/index.js"></script>
+  <title>Mening kutubxonam</title>
+</head>
 <body>
+  <!--Header-->
   <header>
-    <div class="logo">
-      <img src="icons8-astronomy-64.png" alt="Logo">
-      <h2 style="color:#fff;">R.B.</h2>
+    <div class="sarlavha">
+      <h1>📚 Mening kutubxonam</h1>
     </div>
-
-    <nav class="nav">
-      <a href="#home">Bosh sahifa</a>
-      <a href="#about">Biz haqimizda</a>
-      <a href="#services">Xizmatlar</a>
-      <a href="#contact">Aloqa</a>
-    </nav>
-
-    <button class="menu-btn">&#9776;</button>
+    <div class="header">
+      <nav>
+        <a href="#">Bosh sahifa</a>
+        <a href="#">Kutubxona</a>
+        <a href="#">Aloqa</a>
+      </nav>
+    </div>
+    <!--Qidiruv-->
+    <div class="qidiruv">
+      <section>
+        <input id="qidiruv" type="text" placeholder="🔍 Kitoblar qidiruvi">
+      </section>
+    </div>
   </header>
 
-  <!-- Bosh sahifa -->
-  <section id="home" class="hero">
-    <h1>Web Dasturlash O‘rganing 🚀</h1>
-    <p>Siz uchun eng yaxshi va qulay darsliklar shu yerda.</p>
-    <button class="cta-btn">Boshlash</button>
-  </section>
-
-  <!-- Biz haqimizda -->
-  <section id="about" class="about">
-    <h2>Biz haqimizda</h2>
-    <p>MySite — bu dasturlashni o‘rgatuvchi onlayn platforma. 
-       Bizning maqsadimiz — sizga zamonaviy texnologiyalarni tez va samarali o‘rgatish.</p>
-  </section>
-
-  <!-- Xizmatlar -->
-  <section id="services" class="services">
-    <h2>Xizmatlarimiz</h2>
-    <div class="cards">
-      <div class="card">💻 Frontend kursi</div>
-      <div class="card">⚙️ Backend kursi</div>
-      <div class="card">📱 Mobil ilova</div>
-      <div class="card">🎨 Web dizayn</div>
+  <!-- Kitoblar roʻyxati-->
+  <main id="book-land">
+    <div class="book">
+      <h3>Mehrobdan Chayon</h3>
+      <p>Abdulla Qodiriy</p>
     </div>
-  </section>
+    <div class="book">
+      <h3>Oʻtkan kunlar</h3>
+      <p>Abdulla Qodiriy</p>
+    </div>
+    <div class="book">
+      <h3>Alkimyogar</h3>
+      <p>Paulo Coelho</p>
+    </div>
+    <div class="book">
+      <h3>Harry Potter</h3>
+      <p>J.K. Rowling</p>
+    </div>
+    <div class="book">
+      <h3>Alkimyogar</h3>
+      <p>Paulo Coelho</p>
+    </div>
+    <div class="book">
+      <h3>1984</h3>
+      <p>George Orwell</p>
+    </div>
+    <div class="book">
+      <h3>Harry Potter va Sehrgarlar toshi</h3>
+      <p>J.K. Rowling</p>
+    </div>
+    <div class="book">
+      <h3>O‘tkan kunlar</h3>
+      <p>Abdulla Qodiriy</p>
+    </div>
+    <div class="book">
+      <h3>Mehrobdan chayon</h3>
+      <p>Abdulla Qodiriy</p>
+    </div>
+    <div class="book">
+      <h3>Sariq devni minib</h3>
+      <p>Xudoyberdi To‘xtaboyev</p>
+    </div>
+    <div class="book">
+      <h3>Shum bola</h3>
+      <p>G‘afur G‘ulom</p>
+    </div>
+    <div class="book">
+      <h3>Ikki eshik orasi</h3>
+      <p>O‘tkir Hoshimov</p>
+    </div>
+    <div class="book">
+      <h3>Ufq</h3>
+      <p>O‘tkir Hoshimov</p>
+    </div>
+    <div class="book">
+      <h3>Choliqushi</h3>
+      <p>Reshat Nuri Guntekin</p>
+    </div>
+    
+    <div class="book">
+      <h3>Alkimyogar</h3>
+      <p>Paulo Coelho</p>
+    </div>
+    <div class="book">
+      <h3>1984</h3>
+      <p>George Orwell</p>
+    </div>
+    <div class="book">
+      <h3>Harry Potter</h3>
+      <p>J.K. Rowling</p>
+    </div>
+    <div class="book">
+      <h3>Qorako‘z Majnun</h3>
+      <p>O‘zbek yozuvchisi</p>
+    </div>
+  </main>
 
-  <!-- Aloqa -->
-  <section id="contact" class="contact">
-    <h2>Aloqa</h2>
-    <p>Savollaringiz bo‘lsa bizga yozing:</p>
-    <form>
-      <input type="text" placeholder="Ismingiz" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Xabaringiz"></textarea>
-      <button type="submit">Yuborish</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
+  <!--Footer-->
   <footer>
-    <p>&copy; 2025.R.B. Barcha huquqlar himoyalangan.</p>
+    <p>© 2025. Mening kutubxonam</p>
   </footer>
-
-  <script>
-    const btn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav');
-
-    btn.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
